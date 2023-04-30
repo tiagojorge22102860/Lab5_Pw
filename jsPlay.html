@@ -8,12 +8,14 @@
     <title>JavaScript Playground</title>
 </head>
 <script src="https://kit.fontawesome.com/387a598a15.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 <script>
   function darkmode(x){
     var element=document.body;
     element.classList.toggle("darkmode");
 }
 </script>
+
 <body>
     <header>
         <p>Portefolio Tiago Jorge</p>
@@ -27,7 +29,7 @@
         </nav>
       </header>
       <main>
-        <div>
+        <div class="alinhar">
             <h2>Calculadora Js</h2>
             <input type="text" id="expressao">
             <button onclick="calcular()">Calcular</button>
@@ -46,6 +48,40 @@
                 }
             </script>
         </div>
+        <div class="detail-info-container">
+            <div class="titulo">Teste de Dropdown </div>
+            <div class="info">Se viu isto é porque o onmouseover esta correto </div>
+        </div>
+          
+        <div class="outro">com onmouseover</div>
+
+        <div class="alinhar">
+            <h1>Escrita do nome</h1>
+            <ul id="tarefas"></ul>
+            <form>
+                <input id="tarefa" placeholder="insira o seu nome" type="text">
+                <input id="submit" type="submit">
+            </form>
+        </div>
+        
       </main>
+
+      <footer>
+        <nav class="footer">
+          <p>Email: tiagohjorge03@gmail.com</p>
+          <p>Tiago Jorge,2023</p>
+          <p>Universidade Lusófona de humanidades e Tecnologia</p>
+          <p id="data"></p>
+          <script>
+            const today = new Date();
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            const formattedDate = today.toLocaleDateString('pt-BR', options);
+        
+            document.getElementById('data').textContent = formattedDate;
+          </script>
+          
+        </nav>
+        <img src="https://www.ulusofona.pt/media/logo-geral-horizontal-cores-png.png" alt="" width="363" height="112">
+      </footer>
 </body>
 </html>

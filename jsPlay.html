@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylejs.css">
+    <title>JavaScript Playground</title>
+</head>
+<script src="https://kit.fontawesome.com/387a598a15.js" crossorigin="anonymous"></script>
+<script>
+  function darkmode(x){
+    var element=document.body;
+    element.classList.toggle("darkmode");
+}
+</script>
+<body>
+    <header>
+        <p>Portefolio Tiago Jorge</p>
+         <nav>
+          <i onclick="darkmode(this)" class="fa-solid fa-moon"></i>
+          <a href="index.html">Inicio</a>           
+          <a href="">Sobre Mim</a>  
+          <a href="jsPlay.html">JavaScript Playground</a>     
+          
+              
+        </nav>
+      </header>
+      <main>
+        <div>
+            <h2>Calculadora Js</h2>
+            <input type="text" id="expressao">
+            <button onclick="calcular()">Calcular</button>
+            <button onclick="limpar()">Limpar</button>
+            <p id="resultado"></p>
+            <script>
+                function calcular(){
+                    var expressao=document.getElementById("expressao").value;
+                    var resultado=eval(expressao);
+                    document.getElementById("resultado").innerHTML="Resultado: "+resultado;
+                
+                }
+                function limpar(){
+                    document.getElementById("resultado").innerHTML="";
+                    document.getElementById("expressao").value="";
+                }
+            </script>
+        </div>
+      </main>
+</body>
+</html>

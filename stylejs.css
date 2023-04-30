@@ -1,0 +1,71 @@
+* {
+    padding: 0; 
+    margin: 0;
+    font-family: sans-serif;
+    
+  }
+
+  .darkmode{
+    background-color: black;
+    color: white;
+  }
+ 
+
+  i.fa{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .fa:hover{
+    color: gray;
+  }
+  
+  
+  
+  
+  /* div "menu" */
+  header {
+    font-size: 3em;
+    /* O menu está sticky e ocupa 10vh da altura do viewport */
+    height: 10vh; 
+    
+    top: 0;  
+    
+    display:flex;
+    justify-content: space-between;  
+  }
+  
+  nav {
+    display:flex;
+    justify-content: flex-end;  
+  }
+  
+  
+  nav a {
+    display:block;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(163, 0, 0);
+    
+    
+  }
+
+  footer{
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(50, 49, 49);
+  }
+
+  .footer{
+    display:block;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 20px;
+    
+  }
+
+  div{
+    text-align: center;
+  }

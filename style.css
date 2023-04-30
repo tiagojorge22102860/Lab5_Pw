@@ -1,0 +1,85 @@
+* {
+    padding: 0; 
+    margin: 0;
+    font-family: sans-serif;
+    
+  }
+
+  .darkmode{
+    background-color: black;
+    color: white;
+  }
+ 
+
+  i.fa{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .fa:hover{
+    color: gray;
+  }
+  
+  
+  
+  
+  /* div "menu" */
+  header {
+    font-size: 3em;
+    /* O menu está sticky e ocupa 10vh da altura do viewport */
+    height: 10vh; 
+    
+    top: 0;  
+    
+    display:flex;
+    justify-content: space-between;  
+  }
+  
+  nav {
+    display:flex;
+    justify-content: flex-end;  
+  }
+  
+  
+  nav a {
+    display:block;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(163, 0, 0);
+    
+    
+  }
+
+  footer{
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(50, 49, 49);
+  }
+
+  .footer{
+    display:block;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 20px;
+    
+  }
+
+
+  div:first-child{/*Hero page*/
+    height: 90vh;
+    width: 100vw;
+    font-size: 1rem;
+    background-image: url("https://images.unsplash.com/photo-1681406405664-dab81e47b7d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  

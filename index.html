@@ -21,7 +21,15 @@
         <nav>
           <i onclick="darkmode(this)" class="fa-solid fa-moon"></i>
           <a href="index.html">Inicio</a>           
-          <a href="">Sobre Mim</a>  
+          <div class="dropdown">
+            <button class="dropbtn">Sobre Mim</button>
+            <div class="dropdown-content">
+              <a href="#educacao">Educação</a>
+              <a href="#aptidao">Aptidões</a>
+              <a href="#interesses">Interesses</a>~
+              <a href="#contacto">Contactos</a>
+            </div>
+          </div>
           <a href="jsPlay.html">JavaScript Playground</a>     
         </nav>
       </header>
@@ -38,6 +46,7 @@
           <p>Gosto de fotografia e de Automobilismo</p>
         </div>
           <br><br>
+        <div id="educacao">
         <div class="espaco">
           <h2>Educação</h2>
           <div class="timeline">
@@ -61,8 +70,8 @@
             </div>
         
         </div>
-
-        <div class="alinhar">
+        </div>
+        <div class="espaco" id="aptidao">
           <h2> Aptidões e interesses</h2>
           <p> Softwares e Linguagens de programação:</p>
           <ul>
@@ -88,6 +97,8 @@
             <li>Espanhol- elementar</li>
           </ul>
           <br>
+        </div>
+        <div class="espaco" id="interesses">
           <p>Interesses</p>
           <ul>
             <li>Jogos</li>
@@ -97,7 +108,20 @@
           </ul>
         </div>
 
+          <br>
+          <br>
 
+          <div id="contacto" class="contacto">
+            <h4>Contactos</h4>
+            <p>Para entrar em contacto:</p>
+            <ul>
+              <li><a href="https://pt.linkedin.com/in/tiago-jorge-2850b7235?trk=people-guest_people_search-card">Linkedin</a>
+               
+              <li><a href="https://github.com/tiagojorge22102860">GitHub</a>
+                
+            </ul>
+
+          </div>
       </main>
       
       <footer>

@@ -40,17 +40,7 @@
     justify-content: flex-end;  
   }
   
-  
-  nav a {
-    display:block;
-    padding: 0 1em;
-    text-decoration: none;
-    font-size: 1rem;
-    color: rgb(163, 0, 0);
-    
-    
-  }
-
+ 
   footer{
     height: 17vh;
     display: flex;
@@ -177,4 +167,76 @@
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+
+nav a,.dropdown a {
+  
+  
+  color: rgb(163, 0, 0);
+
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+ 
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow: hidden;
+  color: rgb(163, 0, 0);
+ 
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-family: inherit;
+  background-color: inherit;
+  margin: 0;
+  color: rgb(163, 0, 0);
+
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: lightgrey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(163, 0, 0);
+
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.contacto{
+  padding-left: 30px;
+  
+  
+}
+.contacto a{
+  text-decoration: none;
 }
